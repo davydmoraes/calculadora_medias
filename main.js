@@ -52,7 +52,7 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
   let mediaFinal = calculaMediaFinal();
 
-  document.getElementById('media-final-valor').innerHTML = mediaFinal;
+  document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
 
   document.getElementById('resultado-final-valor').innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;
 }
